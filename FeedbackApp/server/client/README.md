@@ -74,3 +74,14 @@ install concurrently or npm-run-all to allow run both client and server together
 npm install --save redux react-redux react-router-dom
 createStore(reducer,initialstate,applyMiddleware()) --- > `store = createStore(()=>[],{},applyMiddleware())` (createStore and applyMiddleware from redux)
 Add provider from react-redux. wrap <App > with <Provider store={store}>
+
+Add reducers folder containing authReducer. Reducer is function that takes state and action as parameter and return state
+combine all reducers in index.js inside reducers folder. import that reducers in index.js of outside. and pass to createStore first argument of reducers.
+
+Setup react router by adding <BrowserRoute>. It only accepts single child.exact is used to match exact path. If we want to add some component on all page add it as we have added <Header/>
+`<BrowserRoute>
+            <Header/>
+          <Route exact path="/" component={Landing}/>
+      </BrowserRoute>`
+
+<b>In react router dom 6 version enclose <Route > elements in <Routes>. Instead of component use Element={<Dashboard/>}</b>
