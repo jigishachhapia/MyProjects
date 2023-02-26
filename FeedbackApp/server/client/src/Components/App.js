@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route,BrowserRouter,Routes} from 'react-router-dom';
-const Header = ()=>{ return (<div>Header</div>);}
+import Header from "./Header";
 const Dashboard = ()=>{ return (<div>Dashboard</div>);}
 const Survey = ()=>{ return (<div>Survey</div>);}
 const Landing = ()=>{ return (<div>Landing</div>);}

@@ -85,3 +85,5 @@ Setup react router by adding <BrowserRoute>. It only accepts single child.exact 
       </BrowserRoute>`
 
 <b>In react router dom 6 version enclose <Route > elements in <Routes>. Instead of component use Element={<Dashboard/>}</b>
+For css install materialize-css import in index.js or App.js file. add it to Header.js component.
+Set up for redux-thunk. install then add it to App.js
